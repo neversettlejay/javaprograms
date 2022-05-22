@@ -20,7 +20,8 @@ import org.json.simple.JSONObject;
  * 
  * */
 public class JsonConverterClass {
-    public static void convertToJsonData() throws FileNotFoundException {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	public static void convertToJsonData() throws FileNotFoundException {
     	JSONObject job = new JSONObject();
     	// Adding data using the created object
     	job.put("fName", "Shobha");
